@@ -10,10 +10,10 @@
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "RDCToken",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "RDCT",
 
   // coin type
   //  Options:
@@ -58,12 +58,12 @@
   "wallet": {
     "host": "localhost",
     "port": 9332,
-    "user": "darkcoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "user": "rpcuser",
+    "pass": "P123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 15,
 
   // language settings
   "locale": "locale/en.json",
@@ -74,21 +74,21 @@
     "markets": false,
     "richlist": true,
     "twitter": true,
-    "facebook": false,
+    "facebook": true,
     "googleplus": false,
     "search": true,
     "movement": true,
     "network": true,
-    "masternodes": false,
-    "coininfo": false,
+    "masternodes": true,
+    "coininfo": true,
     "coinmarketcap": false
   },
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
-    "show_hashrate": true,
+    "show_hashrate": false,
     "show_coin_supply": true,
-    "difficulty": "POW",
+    "difficulty": "POS",
     "last_txs": 100
   },
 
@@ -130,7 +130,7 @@
   },
 
   // Masternodes page
-  // default port: Default port a masternode is running. 
+  // default port: Default port a masternode is running.
   "masternodes": {
     "default_port": 12845,
 
@@ -152,9 +152,9 @@
     "basic_info_links": [
       ["Github", "http://github.com/"]
     ],
-    "masternode_required": 1000,
-    "block_time_sec": 120,
-    "block_reward_mn": 5
+    "masternode_required": 7500,
+    "block_time_sec": 60,
+    "block_reward_mn": 1.5
   },
 
   // CoinMarketCap integration
