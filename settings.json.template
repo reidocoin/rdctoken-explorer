@@ -5,7 +5,7 @@
 */
 {
   // name your instance!
-  "title": "Explorerz.top",
+  "title": "RDCToken explorer",
 
   "address": "127.0.0.1:3001",
 
@@ -19,7 +19,7 @@
   //  Options:
   //    bitcoin = Default Bitcoin/Dash/... clones
   //    ripple = Ripple clones
-  "baseType": "bitcoin",
+  "baseType": "pivx",
 
   // The epoch time for a ripple based coin.
   // You can ignore this setting if you're not using a ripple based coin.
@@ -36,7 +36,7 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Cyborg",
+  "theme": "Yeti",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -57,7 +57,7 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9332,
+    "port": 3132,
     "user": "rpcuser",
     "pass": "P123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
   },
@@ -73,14 +73,14 @@
     "api": true,
     "markets": false,
     "richlist": true,
-    "twitter": true,
-    "facebook": true,
+    "twitter": false,
+    "facebook": false,
     "googleplus": false,
     "search": true,
     "movement": true,
     "network": true,
     "masternodes": true,
-    "coininfo": true,
+    "coininfo": false,
     "coinmarketcap": false
   },
 
@@ -132,7 +132,7 @@
   // Masternodes page
   // default port: Default port a masternode is running.
   "masternodes": {
-    "default_port": 12845,
+    "default_port": 49846,
 
     // Use index-based values (starting with 0).
     // 0 is the key of the masterlist data.
@@ -168,8 +168,8 @@
   "googleplus": "yourgooglepluspage",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "8f991f41bb8c6ba2b4af9d71a23df0c4a8dfb9a8edf004069b65fa624ce2b8f1",
+  "genesis_block": "000003ae9a3767e1a412e8ac769a4e99a7a1ca3cf2848c9e5abe1ea2fef8a2fd",
 
   // Fetch blocks from <index>
   "fetch_blocks_from": 0,
