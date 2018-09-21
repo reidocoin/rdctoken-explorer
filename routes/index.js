@@ -428,7 +428,7 @@ router.get('/ext/summary', function(req, res) {
                         difficultyHybrid: difficultyHybrid,
                         masternodeCount: masternodecount,
                         masternodeOnlineCount: masternodeonlinecount,
-                        roi: (((1 / masternodeOnlineCount) * 1.5 * 1440 * 1 * 365) / 7500).toFixed(3),
+                        roi: (((1 / masternodeonlinecount) * 1.5 * 1440 * 1 * 365) / 7500).toFixed(3),
                         supply: formatNum(stats.supply, { maxFraction: 4 }),
                         hashrate: hashrate,
                         lastPriceBtc: formatNum(stats.last_price, { maxFraction: 8 }),
