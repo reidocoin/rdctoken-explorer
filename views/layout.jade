@@ -32,6 +32,7 @@ html
             $("#difficulty").text(json.data[0].difficulty);
             $("#masternodeCount").text(json.data[0].masternodeCount);
             $("#masternodeOnlineCount").text(json.data[0].masternodeOnlineCount);
+            $("#masternodeROI").text( (((1/json.data[0].masternodeOnlineCount)*1,5*1440*100%*365)/7500) );
             $("#difficultyHybrid").text(json.data[0].difficultyHybrid);
             $("#hashrate").text(json.data[0].hashrate);
             $("#price_btc").text(json.data[0].lastPriceBtc);
@@ -250,8 +251,8 @@ html
                 row.text-center
                   .col-md-12
                     h1#masternodeCount -
-                    h3 online:&nbsp;
-                      label#masternodeOnlineCount -
+                    h3 ROI:&nbsp;
+                      label#masternodeROI -
 
     .col-md-12
       .row.text-center(style='margin-top:10px;margin-bottom:20px;')
